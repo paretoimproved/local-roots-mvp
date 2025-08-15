@@ -1,0 +1,40 @@
+{
+  "name": "local-roots-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Community Supported Agriculture marketplace MVP",
+  "keywords": ["csa", "agriculture", "marketplace", "local-food"],
+  "author": "Local-Roots Team",
+  "license": "MIT",
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "test:e2e": "turbo run test:e2e",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "format": "turbo run format",
+    "clean": "turbo run clean && rm -rf node_modules .turbo",
+    "db:generate": "turbo run db:generate",
+    "db:push": "turbo run db:push",
+    "db:migrate": "turbo run db:migrate",
+    "db:studio": "turbo run db:studio",
+    "db:seed": "turbo run db:seed"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^1.12.4",
+    "@types/node": "^20.11.17"
+  }
+}
