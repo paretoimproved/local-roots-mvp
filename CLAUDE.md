@@ -88,6 +88,28 @@ Closes LR-123
 - **Testing**: Coverage requirement of >80% for all new code
 - **TypeScript**: Strict mode enabled across all packages
 
+## Deployment & UAT Process
+
+### **Linear Ticket Status Workflow**
+1. **In Progress** → Development work begins
+2. **PR Review** → Pull request created and under review
+3. **Ready for Staging** → PR merged, deployed to staging automatically
+4. **UAT Testing** → User Acceptance Testing in staging environment
+5. **Done** → UAT passed, feature verified in staging, ready for production
+
+### **Staging Environment Testing (Required)**
+- **URL**: Vercel automatic staging deployments
+- **Process**: All PRs merged to `main` automatically deploy to staging
+- **UAT Requirement**: Every ticket MUST be tested in staging before marking as "Done"
+- **Testing Checklist**:
+  - [ ] Feature functionality works as expected
+  - [ ] Mobile responsiveness verified on real devices/browsers
+  - [ ] Performance meets requirements (<2s page load)
+  - [ ] Error handling works correctly
+  - [ ] Design matches mockups and design system
+  - [ ] Accessibility standards met
+- **Sign-off**: Engineering Manager approval required for UAT completion
+
 ## Project Documentation
 
 **ALWAYS refer to these documentation files when making design, engineering, or implementation decisions:**
