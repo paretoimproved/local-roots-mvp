@@ -17,12 +17,33 @@
 - [ ] Type checking passes (`pnpm typecheck`)
 
 ### ✅ Code Review Process
+
+#### Team Development (When Multiple Developers)
 - [ ] Feature branch created from `main`
 - [ ] Pull Request created with Linear ticket reference
 - [ ] PR template fully completed
 - [ ] **Engineering Manager +1 approval required** (@brandonqueener)
 - [ ] All CI checks passing (tests, lint, build)
 - [ ] **No ticket marked complete without EM +1**
+
+#### Solo Development Mode (@brandonqueener only)
+- [ ] Feature branch created from `main`
+- [ ] Pull Request created with comprehensive description and test plan
+- [ ] **Self-review checklist completed** (see below)
+- [ ] All CI checks passing (tests, lint, build)
+- [ ] 24-hour cooling off period for complex features (optional)
+- [ ] Merge after self-review approval
+
+**Solo Development Self-Review Checklist:**
+- [ ] Code follows all project conventions and standards
+- [ ] All acceptance criteria met and documented in PR
+- [ ] Error handling and edge cases covered
+- [ ] Mobile responsiveness verified at all breakpoints
+- [ ] Performance requirements met (<2s page load)
+- [ ] Accessibility standards followed (WCAG 2.1 AA)
+- [ ] TypeScript strict mode compliance (0 errors)
+- [ ] ESLint compliance (0 warnings)
+- [ ] Design system compliance verified
 
 ### ✅ Deployment Pipeline
 - [ ] Code deployed to staging environment
