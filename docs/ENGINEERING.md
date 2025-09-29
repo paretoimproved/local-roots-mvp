@@ -20,8 +20,9 @@
 - [ ] Feature branch created from `main`
 - [ ] Pull Request created with Linear ticket reference
 - [ ] PR template fully completed
-- [ ] Code reviewed and approved by Engineering Manager
+- [ ] **Engineering Manager +1 approval required** (@brandonqueener)
 - [ ] All CI checks passing (tests, lint, build)
+- [ ] **No ticket marked complete without EM +1**
 
 ### ✅ Deployment Pipeline
 - [ ] Code deployed to staging environment
